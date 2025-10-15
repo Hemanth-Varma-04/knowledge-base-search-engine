@@ -19,30 +19,6 @@ https://github.com/user-attachments/assets/b9eded98-450a-4651-bcd6-a1b55c795725
 7. The top K retrieved chunks are combined into a context block.
 8. The context and query are passed to a Gemini generative model (gemini 1.5 flash or pro) to produce a concise and citation backed answer.
 9. The Streamlit interface displays the final synthesized answer and the list of sources with document name and page number.
-## Project Structure
-kb rag streamlit
-│
-├── README.md
-├── requirements.txt
-├── .env.example
-├── scripts
-│   └── create mongo vector index.json
-│
-├── data
-│   ├── raw  contains uploaded pdfs
-│   └── processed  contains extracted text jsonl
-│
-├── app
-│   ├── __init__.py
-│   ├── api.py  FastAPI endpoints for ingest and query
-│   ├── rag.py  core pipeline for embedding retrieval and generation
-│   ├── db.py  MongoDB connection and helper methods
-│   ├── pdf loader.py  text extraction from pdf files
-│   ├── prompts.py  RAG prompt templates
-│   └── utils.py  text cleaning chunking and hashing utilities
-│
-└── frontend
-    └── streamlit app.py  Streamlit UI for uploading files and querying
 
 ## Environment Setup
 1. Clone the repository and open it in your code editor.
