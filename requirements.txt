@@ -1,0 +1,20 @@
+# Core
+pymongo
+python-dotenv
+numpy
+pandas
+
+# LLM (Gemini)
+google-generativeai
+
+# API & UI
+fastapi
+uvicorn[standard]
+streamlit
+
+# PDF
+pypdf
+pdfplumber
+
+# Utils
+tqdm

@@ -1,0 +1,17 @@
+{
+  "mappings": {
+    "dynamic": true,
+    "fields": {
+      "embedding": {
+        "type": "knnVector",
+        "dimensions": 768,
+        "similarity": "cosine"
+      },
+      "metadata": {
+        "type": "document"
+      },
+      "doc_id": { "type": "string" },
+      "chunk_id": { "type": "string" }
+    }
+  }
+}
