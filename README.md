@@ -1,5 +1,5 @@
 # Knowledge Base Search Engine using Gemini API and MongoDB Vector Search with Streamlit Interface
-
+https://knowledge-base-search-engine-rag.streamlit.app/
 ## Overview
 This project is a knowledge base search engine that allows users to upload one or more PDF documents and ask questions about their content. The system extracts and chunks text from the PDFs, creates vector embeddings using the Gemini API, stores them in MongoDB Atlas Vector Search, and answers user queries using Retrieval Augmented Generation (RAG) with the Gemini language model.
 
