@@ -1,11 +1,15 @@
-Knowledge Base Search Engine using Gemini API and MongoDB Vector Search with Streamlit Interface
+# Knowledge Base Search Engine using Gemini API and MongoDB Vector Search with Streamlit Interface
 
-Overview
+## Overview
 This project is a knowledge base search engine that allows users to upload one or more PDF documents and ask questions about their content. The system extracts and chunks text from the PDFs, creates vector embeddings using the Gemini API, stores them in MongoDB Atlas Vector Search, and answers user queries using Retrieval Augmented Generation (RAG) with the Gemini language model.
 
 The main goal is to provide an end to end searchable knowledge base built on top of your own documents with accurate retrieval and AI synthesized answers.
+##
+# Demo Video
 
-How it Works
+https://github.com/user-attachments/assets/b9eded98-450a-4651-bcd6-a1b55c795725
+
+## How it Works
 1. The user uploads one or more PDF files through the Streamlit interface.
 2. The system extracts text from each page using pdfplumber and cleans the text.
 3. The text is chunked into fixed length segments with overlapping tokens for context preservation.
@@ -15,8 +19,7 @@ How it Works
 7. The top K retrieved chunks are combined into a context block.
 8. The context and query are passed to a Gemini generative model (gemini 1.5 flash or pro) to produce a concise and citation backed answer.
 9. The Streamlit interface displays the final synthesized answer and the list of sources with document name and page number.
-
-Project Structure
+## Project Structure
 kb rag streamlit
 │
 ├── README.md
@@ -41,7 +44,7 @@ kb rag streamlit
 └── frontend
     └── streamlit app.py  Streamlit UI for uploading files and querying
 
-Environment Setup
+## Environment Setup
 1. Clone the repository and open it in your code editor.
 2. Create a virtual environment and install dependencies:
    pip install -r requirements.txt
